@@ -10,12 +10,15 @@
 	
 	<bean id="beforeAdvice" class="com.rcb.aspect.BeforeAdvice"></bean>
 	<bean id="afterAdvice" class="com.rcb.aspect.AfterAdvice"></bean>
+	<bean id="exceptionAdvice" class="com.rcb.aspect.ExceptionAdvice"></bean>
+	
 	
 	<bean id="beforeProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
 		<property name="target"><ref bean="customerService"/></property>
 		<property name="interceptorNames">
 			<!-- <list><value>beforeAdvice</value></list> -->
-			<list><value>afterAdvice</value></list>
+			<!-- <list><value>afterAdvice</value></list> -->
+			<list><value>exceptionAdvice</value></list>
 		</property>
 	</bean>
 	
