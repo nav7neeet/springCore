@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="men" class="com.rcb.injection.MenPlayers">
+	<property name="player1"><value>Raina</value></property>
+	<property name="player2"><value>Yuvi</value></property>
+	<property name="player3"><value>Kohli</value></property>
+</bean>
+
+<bean id="women" class="com.rcb.injection.WomenPlayers">
+	<property name="player1"><value>Sabbarwal</value></property>
+	<property name="player2"><value>Suimui</value></property>
+	<property name="player3"><value>Pooja</value></property>
+</bean>
+
+<bean id="cricTeam" class="com.rcb.injection.CricketTeam">
+	<property name="players"><ref bean="women"/></property>
+</bean>
+
+</beans>
