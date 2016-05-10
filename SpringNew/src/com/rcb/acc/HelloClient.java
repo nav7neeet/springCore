@@ -9,6 +9,6 @@ public class HelloClient
 	{
 		ApplicationContext context = new ClassPathXmlApplicationContext("hello.xml");
 		Hello hello = (Hello) context.getBean("hello");
-		hello.fun();
+		hello.fun("dossier - collection of docs");
 	}
 }
