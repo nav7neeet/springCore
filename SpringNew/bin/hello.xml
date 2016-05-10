@@ -10,6 +10,9 @@
 	<constructor-arg>
 		<value>Hello</value>
 	</constructor-arg>
+	<property name="a"><value>20</value></property>
+	<property name="s"><value>Hello</value></property>
+	<property name="f"><value>3.4f</value></property>
 </bean>
 
 </beans>
