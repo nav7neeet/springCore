@@ -11,6 +11,7 @@
 	<bean id="beforeAdvice" class="com.rcb.aspect.BeforeAdvice"></bean>
 	<bean id="afterAdvice" class="com.rcb.aspect.AfterAdvice"></bean>
 	<bean id="exceptionAdvice" class="com.rcb.aspect.ExceptionAdvice"></bean>
+	<bean id="aroundAdvice" class="com.rcb.aspect.AroundAdvice"></bean>
 	
 	
 	<bean id="beforeProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
@@ -18,7 +19,8 @@
 		<property name="interceptorNames">
 			<!-- <list><value>beforeAdvice</value></list> -->
 			<!-- <list><value>afterAdvice</value></list> -->
-			<list><value>exceptionAdvice</value></list>
+			<!-- <list><value>exceptionAdvice</value></list> -->
+			<list><value>aroundAdvice</value></list>
 		</property>
 	</bean>
 	
