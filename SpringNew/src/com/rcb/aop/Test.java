@@ -10,11 +10,12 @@ public class Test {
 
 		CustomerService cust = (CustomerService) appContext.getBean("beforeProxy");
 
-		System.out.println("*************************");
+/*		System.out.println("*************************");
 		cust.printName();
+		
 		System.out.println("*************************");
 		cust.printURL();
-		System.out.println("*************************");
+		System.out.println("*************************");*/
 		
 		try
 		{
@@ -24,6 +25,5 @@ public class Test {
 		{
 			System.out.println(e);
 		}
-
 	}
 }

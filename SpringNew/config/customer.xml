@@ -18,9 +18,9 @@
 		<property name="target"><ref bean="customerService"/></property>
 		<property name="interceptorNames">
 			<!-- <list><value>beforeAdvice</value></list> -->
-			<!-- <list><value>afterAdvice</value></list> -->
+			<list><value>afterAdvice</value></list>
 			<!-- <list><value>exceptionAdvice</value></list> -->
-			<list><value>aroundAdvice</value></list>
+			<!-- <list><value>aroundAdvice</value></list> -->
 		</property>
 	</bean>
 	

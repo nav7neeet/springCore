@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
+    http://www.springframework.org/schema/aop   
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">  
+
+
+	<bean id="customerBoImpl" class="com.rcb.aspectj.xml.CustomerBoImpl"></bean>
+	
+	<bean id="BeforeAspect" class="com.rcb.aspectj.xml.BeforeAspect"></bean>
+	<bean id="AfterAspect" class="com.rcb.aspectj.xml.AfterAspect"></bean>
+	<bean id="ExceptionAspect" class="com.rcb.aspectj.xml.ExceptionAspect"></bean>
+	<bean id="AroundAspect" class="com.rcb.aspectj.xml.AroundAspect"></bean>
+	
+<!-- 	<aop:config>
+		<aop:aspect id="before" ref="BeforeAspect">
+			<aop:pointcut expression="execution( * com.rcb.aspectj.xml.CustomerBoImpl.*(..))" id="pc1"/>
+			<aop:before method="before" pointcut-ref="pc1"/>
+		</aop:aspect>
+	</aop:config> -->
+	
+	<aop:config>
+		<aop:aspect id="after" ref="AfterAspect">
+			<aop:pointcut expression="execution( * com.rcb.aspectj.xml.CustomerBoImpl.*(..))" id="pc2"/>
+			<aop:after method="after" pointcut-ref="pc2"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<!-- <aop:config>
+		<aop:aspect id="exception" ref="ExceptionAspect">
+			<aop:pointcut expression="execution( * com.rcb.aspectj.xml.CustomerBoImpl.*(..))" id="pc3"/>
+			<aop:before method="exception" pointcut-ref="pc3"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<aop:config>
+		<aop:aspect id="around" ref="AroundAspect">
+			<aop:pointcut expression="execution( * com.rcb.aspectj.xml.CustomerBoImpl.*(..))" id="pc4"/>
+			<aop:before method="around" pointcut-ref="pc4"/>
+		</aop:aspect>
+	</aop:config> -->
+	
+	
+</beans>
