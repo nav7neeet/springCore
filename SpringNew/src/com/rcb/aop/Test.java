@@ -1,4 +1,4 @@
-package com.rcb.aspect;
+package com.rcb.aop;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

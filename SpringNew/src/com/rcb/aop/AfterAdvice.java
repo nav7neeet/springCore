@@ -1,4 +1,4 @@
-package com.rcb.aspect;
+package com.rcb.aop;
 
 import java.lang.reflect.Method;
 

@@ -3,15 +3,15 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="customerService" class="com.rcb.aspect.CustomerService">
+	<bean id="customerService" class="com.rcb.aop.CustomerService">
 		<property name="name" value="Yong Mook Kim" />
 		<property name="url" value="http://www.mkyong.com" />
 	</bean>
 	
-	<bean id="beforeAdvice" class="com.rcb.aspect.BeforeAdvice"></bean>
-	<bean id="afterAdvice" class="com.rcb.aspect.AfterAdvice"></bean>
-	<bean id="exceptionAdvice" class="com.rcb.aspect.ExceptionAdvice"></bean>
-	<bean id="aroundAdvice" class="com.rcb.aspect.AroundAdvice"></bean>
+	<bean id="beforeAdvice" class="com.rcb.aop.BeforeAdvice"></bean>
+	<bean id="afterAdvice" class="com.rcb.aop.AfterAdvice"></bean>
+	<bean id="exceptionAdvice" class="com.rcb.aop.ExceptionAdvice"></bean>
+	<bean id="aroundAdvice" class="com.rcb.aop.AroundAdvice"></bean>
 	
 	
 	<bean id="beforeProxy" class="org.springframework.aop.framework.ProxyFactoryBean">

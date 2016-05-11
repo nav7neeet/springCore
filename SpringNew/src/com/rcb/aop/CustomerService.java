@@ -1,4 +1,4 @@
-package com.rcb.aspect;
+package com.rcb.aop;
 
 public class CustomerService {
 	private String name;
